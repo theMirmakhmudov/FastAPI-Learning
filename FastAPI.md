@@ -42,3 +42,100 @@
 `Qisqa:` **Kodning takrorlanishini kamaytiradi.**
 
 `Standartlarga asoslangan:` **U API, OpenAPI va JSON sxemasi uchun ochiq standartlarga asoslangan.**
+
+---
+## Install FastAPI
+
+#### The first step is to install FastAPI and Uvicorn using pip:
+
+
+ ```shell
+python -m pip install fastapi uvicorn[standard]
+```
+```shell 
+pip install fastapi uvicorn[stardart]
+```
+
+
+---
+
+## First Step 
+#### Create a First API
+
+---
+`main.py`
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+```
+
+## Run the First API App With Uvicorn
+
+#### Run the live server using Uvicorn:
+
+---
+
+```shell
+$ uvicorn main:app --reload
+
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [28720]
+INFO:     Started server process [28722]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+```
+
+**or**
+
+```shell 
+fastapi dev main.py
+
+ ╭────────── FastAPI CLI - Development mode ───────────╮
+ │                                                     │
+ │  Serving at: http://127.0.0.1:8000                  │
+ │                                                     │
+ │  API docs: http://127.0.0.1:8000/docs               │
+ │                                                     │
+ │  Running in development mode, for production use:   │
+ │                                                     │
+ │  fastapi run                                        │
+ │                                                     │
+ ╰─────────────────────────────────────────────────────╯
+
+INFO:     Will watch for changes in these directories: ['/home/user/code/awesomeapp']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [2248755] using WatchFiles
+INFO:     Started server process [2248757]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+```
+---
+## Check the Response
+#### Open your browser to http://127.0.0.1:8000, which will make your browser send a request to your application. It will then send a JSON response with the following:
+
+![img_2.png](img_2.png)
+
+---
+
+## Check the Interactive API Documentation
+
+#### Now open http://127.0.0.1:8000/docs in your browser.
+
+---
+
+![img_3.png](img_3.png)
+
+---
+
+## Check the Alternative Interactive API Documentation
+#### Now, go to http://127.0.0.1:8000/redoc in your browser.
+
+---
+![img_4.png](img_4.png)
+---
+
