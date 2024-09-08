@@ -74,7 +74,7 @@ async def root():
     return {"message": "Hello World"}
 ```
 
-## Run the First API App With Uvicorn
+### **Run the First API App With Uvicorn**
 
 #### Run the live server using Uvicorn:
 
@@ -115,14 +115,14 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
 ---
-## Check the Response
+### **Check the Response**
 #### Open your browser to http://127.0.0.1:8000, which will make your browser send a request to your application. It will then send a JSON response with the following:
 
 ![img_2.png](img_2.png)
 
 ---
 
-## Check the Interactive API Documentation
+### **Check the Interactive API Documentation**
 
 #### Now open http://127.0.0.1:8000/docs in your browser.
 
@@ -132,10 +132,37 @@ INFO:     Application startup complete.
 
 ---
 
-## Check the Alternative Interactive API Documentation
+### **Check the Alternative Interactive API Documentation**
 #### Now, go to http://127.0.0.1:8000/redoc in your browser.
 
 ---
 ![img_4.png](img_4.png)
+
+---
+###  **Important HTTP Methods (Muhim HTTP Methodlari)**
+
+##### Quyida keltirilgan yo‘nalishlar mavjud:
+
+---
+- `GET`: **Ma'lumot olish**
+- `POST`: **Ma'lumot yuborish**
+- `PUT`: **Ma'lumotni yangilash**
+- `DELETE`: **Ma'lumotni o'chirish**
+- `OPTIONS`: **Ruxsat berilgan methodlarni ko'rsatish**
+- `HEAD`: **Resurs mavjudligini tekshirish**
+- `PATCH`: **Ma'lumotni qisman yangilash uchun ishlatiladi.**
+- `TRACE`: **Server bilan aloqa uchun**
+
+---
+### **API Yo‘nalishlari (Endpoints)**
+##### Quyida keltirilgan yo‘nalishlar mavjud:
+
 ---
 
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
+- `@app.options()`
+- `@app.head()`
+- `@app.patch()`
+- `@app.trace()`
