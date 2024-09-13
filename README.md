@@ -1,4 +1,4 @@
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 ---
 
@@ -118,7 +118,7 @@ INFO:     Application startup complete.
 ### **Check the Response**
 #### Open your browser to http://127.0.0.1:8000, which will make your browser send a request to your application. It will then send a JSON response with the following:
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 ---
 
@@ -128,7 +128,7 @@ INFO:     Application startup complete.
 
 ---
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 ---
 
@@ -136,7 +136,7 @@ INFO:     Application startup complete.
 #### Now, go to http://127.0.0.1:8000/redoc in your browser.
 
 ---
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 ---
 ###  **Important HTTP Methods (Muhim HTTP Methodlari)**
@@ -166,3 +166,4 @@ INFO:     Application startup complete.
 - `@app.head()`
 - `@app.patch()`
 - `@app.trace()`
+
